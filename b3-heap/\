@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int *data;
+    int size;
+    int capacity;
+} DynamicArray;
+
+DynamicArray* da_create() {
+    // 待实现
+}
+
+void da_push(DynamicArray *da, int val) {
+    // 待实现
+}
+
+int da_get(DynamicArray *da, int i) {
+    // 待实现
+}
+
+void da_free(DynamicArray *da) {
+    // 待实现
+}
+
+int main() {
+    DynamicArray *da = da_create();
+    for (int i = 0; i < 10; i++) {
+        da_push(da, i * 10);
+    }
+    for (int i = 0; i < 10; i++) {
+        printf("da[%d] = %d\n", i, da_get(da, i));
+    }
+    da_free(da);
+    return 0;
+}
