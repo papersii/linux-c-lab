@@ -1,0 +1,6 @@
+# 编译产物 / build artifacts
+pointer_string
+ptr_to_ptr
+*.o
+*.out
+a.out
